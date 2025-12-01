@@ -1,0 +1,12 @@
+# Archivos de sistema y entorno
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+.DS_Store
+
+# Archivos de configuración con claves (IMPORTANTE para seguridad)
+.env
+config.json
+ofertas_monitores.csv
