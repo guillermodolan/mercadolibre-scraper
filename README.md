@@ -4,7 +4,7 @@ Esta es una herramienta de automatización (RPA) diseñada para extraer, monitor
 
 El bot es capaz de adaptarse dinámicamente a los diferentes diseños de interfaz (A/B Testing) de la plataforma, garantizando una extracción de datos robusta y continua. 
 
-A modo de ejemplo, se realiza la búsqueda de **Teclados Gamer**.
+A modo de ejemplo, llevaremos a cabo la búsqueda de **Teclados Gamer**.
 
 ## 🚀 Características
 
@@ -29,23 +29,30 @@ A modo de ejemplo, se realiza la búsqueda de **Teclados Gamer**.
    ```
 2. **Crear entorno virtual(se usa PyCharm en este proyecto):**
    Si no se agregó el entorno virtual, seguir los siguientes pasos:
-   1. Dentro de este proyecto en Pycharm, click en **File**.
+   1. Dentro de este proyecto en Pycharm, click en **File** (botón en el menú superior del IDE).
    2. Seleccionar **Settings**.
    3. En el menú Python, buscar **Interpreter**.
    4. Seleccionar una versión como la de este proyecto o más nueva.
-3. **Instalar Dependencias (Importante):**
+3. **Instalar Dependencias (IMPORTANTE):**
    Para realizar este paso, es necesario estar posicionado en la ruta donde se encuentra el proyecto **mercadolibre-scraper**. Ejemplo: **C:\Users\tu_nombre\nombre_carpeta\mercadolibre-scraper**
    ```bash
    pip install -r requirements.txt
    ```
-3. **Configurar la búsqueda: Edita el archivo config.json en la raíz con el siguiente contenido:**
+3. **Configurar la búsqueda:**
+   Dentro de la carpeta donde se encuentra este proyecto (denominada **mercadolibre-scraper**), se debe crear el archivo "config.json". Dentro de este encontramos dos parámetros:
+   1. **search_term:** Acá insertamos el producto a buscar.
+   2. **output_file:** Acá establecemos el nombre del archivo que se generará con todas las características y precios de nuestro artículo a "scrapear".
+   Para nuestro ejemplo, insertamos el siguiente contenido:
    ```bash
    {
       "search_term": "monitor 144hz",
       "output_file": "reporte_precios.csv"
     }
    ```
-4. **Ejecutar el bot:**
+5. **Ejecutar el bot:**
    ```bash
    python mercadolibre_scraper.py
    ```
+
+6. **Visualización de resultados:**
+   Si la búsqueda fue exitosa, dentro de la carpeta del proyecto (denominada **mercadolibre-scraper**) aparecerá el archivo "reporte_precios.csv" donde podremos visualizar toda nuestra información para llevar a cabo nuestros análisis.
