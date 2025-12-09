@@ -34,6 +34,7 @@ A modo de ejemplo, se realiza la búsqueda de **Teclados Gamer**.
    3. En el menú Python, buscar **Interpreter**.
    4. Seleccionar una versión como la de este proyecto o más nueva.
 3. **Instalar Dependencias (Importante):**
+   Para realizar este paso, es necesario estar posicionado en la ruta donde se encuentra el proyecto **mercadolibre-scraper**. Ejemplo: **C:\Users\tu_nombre\nombre_carpeta\mercadolibre-scraper**
    ```bash
    pip install -r requirements.txt
    ```
