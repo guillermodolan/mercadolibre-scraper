@@ -27,10 +27,14 @@ A modo de ejemplo, se realiza la búsqueda de **Teclados Gamer**.
    ```bash
    git clone https://github.com/guillermodolan/mercadolibre-scraper.git
    ```
-2. **Crear entorno virtual e instalar dependencias:**
+2. **Crear entorno virtual(se usa PyCharm en este proyecto):**
+   Si no se agregó el entorno virtual, seguir los siguientes pasos:
+   1. Dentro de este proyecto en Pycharm, click en **File**.
+   2. Seleccionar **Settings**.
+   3. En el menú Python, buscar **Interpreter**.
+   4. Seleccionar una versión como la de este proyecto o más nueva.
+3. **Instalar Dependencias (Importante):**
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # En Windows: .venv\Scripts\activate
    pip install -r requirements.txt
    ```
 3. **Configurar la búsqueda: Edita el archivo config.json en la raíz con el siguiente contenido:**
